@@ -8,7 +8,8 @@ public class Raccolta {
 				+ "1) Conta da 1 a 10, solo i numeri pari. Utilizza cicli for e while.\n"
 				+ "2) Conta da 10 a 1, solo i numeri dispari. Utilizza cicli for e while.\n"
 				+ "3) Confronta due variabili, comunicando se sono uguali, o quale è maggiore dell'altra.\n"
-				+ "4) Somma tutti i numeri da 1 a 10.");
+				+ "4) Somma tutti i numeri da 1 a 10.\n"
+				+ "Scegli un'opzione: ");
 	}
 	
 	void contaWhile() {

@@ -9,7 +9,6 @@ public class Esercizi {
 		String risposta;
 		do {
 			r.menu();
-			System.out.println("Scegli un'opzione: ");
 			byte scelta = Byte.parseByte(i.nextLine());
 			switch(scelta) {
 			case 1:
