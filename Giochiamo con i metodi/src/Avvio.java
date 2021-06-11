@@ -1,9 +1,11 @@
 
 public class Avvio {
 
+	
+	//Saluti da Mirko
 	public static void main(String[] args) {
 		//Creo un oggetto della classe Test per poter chiamare nel metodo main
-		//una funzionalit‡ qualsiasi della classe Test stessa
+		//una funzionalit√† qualsiasi della classe Test stessa
 		Test ambasciatore = new Test();
 		ambasciatore.servizio1();
 		System.out.println(ambasciatore.servizio2());
