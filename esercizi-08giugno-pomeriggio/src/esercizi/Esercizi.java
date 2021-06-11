@@ -1,11 +1,17 @@
 package esercizi;
+import java.util.Scanner;
 
 public class Esercizi {
 
 	public static void main(String[] args) {
-		byte scelta = 1;
+		Scanner i = new Scanner(System.in);
 		Raccolta r = new Raccolta();
-		switch(scelta) {
+		String risposta;
+		do {
+			r.menu();
+			System.out.println("Scegli un'opzione: ");
+			byte scelta = Byte.parseByte(i.nextLine());
+			switch(scelta) {
 			case 1:
 				r.contaFor();
 				r.contaWhile();
@@ -22,8 +28,10 @@ public class Esercizi {
 				break;
 			default:
 				System.out.println("Scegliere tra 1 / 2 / 3 / 4");
-		}
-
+			}
+			System.out.println("Continuare? (si/no)");
+			risposta = i.nextLine();
+		}while(risposta.equalsIgnoreCase("si"));
 	}
 
 }
