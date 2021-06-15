@@ -39,7 +39,13 @@ public class GestioneIO {
 						"2) Stampa numeri pari o dispari di un vettore\n" +
 						"3) Stampa valore minimo e massimo di un vettore\n" +
 						"4) Calcola somma e media un vettore di interi\n" +
-						"5) Verifica se una stringa è palindroma";
+						"5) Verifica se una stringa è palindroma\n" +
+						"6) Cerca nominativo in un elenco\n" +
+						"7) Scambio di due variabili\n" +
+						"8) Ordinamento di un vettore di interi\n" +
+						"9) Stampa matrice 3x7 con alfabeto\n" +
+						"10) Stampa matrice 3x7 con alfabeto (ASCII)\n" +
+						"11) Stampa successione di FIbonacci";
 		stampa(frase);
 	}
 	

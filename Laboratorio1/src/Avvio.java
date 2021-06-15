@@ -24,6 +24,24 @@ public class Avvio {
 			case 5:
 				a.stringaPalindroma();
 				break;
+			case 6:
+				a.cercaNominativo();
+				break;
+			case 7:
+				a.swap();
+				break;
+			case 8:
+				a.ordinamentoSwap();
+				break;
+			case 9:
+				a.alfabeto();
+				break;
+			case 10:
+				a.alfabetoAscii();
+				break;
+			case 11:
+				a.successioneFibonaccio();
+				break;
 			default:
 				g.stampaErrore("Attenzione! L'opzione non è valida.");
 			}
