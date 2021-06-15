@@ -26,13 +26,12 @@ public class Metodi {
 	
 	void ricercaNome(String[] vettore) {
 		String nome = leggiStringa("Chi vuoi cercare nell'array?");
-		boolean risultato = true;
+		boolean risultato = false;
 		for(int i=0;i<vettore.length;i++) {
 			if(vettore[i].equalsIgnoreCase(nome)) {
 				System.out.println(nome+" è stato trovato!");
+				risultato = true;
 				break;
-			} else {
-				risultato = false;
 			}
 		}
 		if(!risultato) {
