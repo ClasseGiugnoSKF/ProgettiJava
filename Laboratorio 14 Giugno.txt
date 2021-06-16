@@ -1,0 +1,155 @@
+Laboratorio 14 Giugno
+*Per le scelte opzionali è meglio utilizzare lo switch-case*
+Classe con il metodo main, classe con Input/Output, classe con raccolta metodi.
+
+Algoritmo #1
+Contatore da 1 a 10, però l'utente deve scegliere se visualizzare una
+stampa in orizzontale o in verticale.
+
+Algoritmo #2
+Dato un vettore di interi stampare i numeri pari.L'utente deve scegliere
+se stampare i numeri pari o i numeri dispari.
+
+Algoritmo #3
+Dato un vettore di interi, stampare il valore minimo e il valore massimo.
+
+Algoritmo #4
+Fare la somma e la media dei dati di un vettore di interi.
+
+Algoritmo #5
+Verificare se una stringa è palindroma (suggerisco il metodo charAt()).
+
+Algoritmo #6
+Dato un vettore di stringhe, cercare un nominativo a scelta.
+
+Algoritmo #7
+Date 2 variabili di tipo "int", applicare l'algoritmo dello scambio(swap).
+Stampare il prima e il dopo lo scambio.
+
+Algoritmo #8
+Dato un vettore di interi non ordinato, ordinarlo dal più piccolo al più grande.
+NB!! Si consiglia l'uso dell'algoritmo dello swap.
+
+Algoritmo #9(Per veri temerari!)
+Stampa una matrice 3x7 contenente le lettere dell'alfabeto I T A L I A N O.
+NB!! Non è richiesto l'array multidimensionale. 
+L'output attesto è il seguente:
+A B C D E F G
+H I L M N O P
+Q R S T U V Z
+
+Algoritmo #10(Livello Mirko)
+Sviluppo in serie di Fibonacci.
+
+Algoritmo #11
+Somma a due a due otto interi di un vettore, indicando l'i-esima coppia per ogni somma.
+
+Algoritmo #12
+Estrai le vocali da una frase e stampale(è possibile stampare più volte la stessa vocale).
+
+Algoritmo #13
+Estrai le vocali da una frase e stampale(ogni vocale deve essere ripetuta una sola volta).
+
+Algoritmo #14
+Conta il numero di vocali in una stringa.
+
+Algoritmo #15
+Scegliere la lettera di una stringa da sostituire con uno spazio.
+
+Algoritmo #16
+Creare un vettore di char con le lettere dell'alfabeto e visualizzare in orizzontale
+tutte le lettere minori o uguale a 'M'(ogni lettera deve essere separata da una virgola
+mentre l'ultima lettera deve terminare con un punto).
+A,B,C.
+
+Algoritmo #17
+Creare un vettore di char con le lettere dell'alfabeto e visualizzare in orizzontale
+tutte le lettere comprese tra 'M'(inclusa) e 'P'(esclusa).
+(ogni lettera deve essere separata da una virgola
+mentre l'ultima lettera deve terminare con un punto).
+
+Algoritmo #18
+Creare un vettore di char con le lettere dell'alfabeto e visualizzare in orizzontale
+tutte le lettere comprese tra 'C'(inclusa) e 'G'(inclusa) e 'M'(inclusa) 'P'(inclusa).
+(ogni lettera deve essere separata da una virgola
+mentre l'ultima lettera deve terminare con un punto).
+
+Algoritmo #19
+L'algoritmo deve restituire il seguente risultato:
+*
+**
+***
+****
+*****
+******
+NB!! Sfruttare i loop per avere questo risultato.
+
+Algoritmo #20 (per chi si è divertito con il 19)
+*
+**
+***
+****
+*****
+******
+*******
+******
+*****
+****
+***
+**
+*
+
+//////////////////////////////////////////////////////////////////////////////////////
+Algoritmi suggeriti a chi si sente ancora un po' arruginito:
+Algoritmo #1
+Dichiarare un metodo 'semaforo' a cui passare un colore in input (formato stringa).
+L'algoritmo deve stampare: 
+'Puoi andare' se il colore è verde.
+'Stai attento' se il colore è giallo.
+'Fermati' se il colore è rosso.
+Se il valore non corrisponde a verde giallo o rosso, 
+l'algoritmo deve dire "che razza di semaforo hai in mente?".
+
+Algoritmo #2
+Dato un array di nominativi, far decidere all'utente se stamparli in orizz. o verticale.
+
+Algoritmo #3
+Verificare il massimo dei valori di un array di interi.
+
+Algoritmo #4
+Passati 2 interi in ingresso, verificare il più grande dei 2.
+
+Algoritmo #5
+Passato un valore in ngresso, verificare se è pari o dispari.
+
+Algoritmo #6
+Passare un valore numerico intero e 2 decimali in ingresso.
+Se il numero intero è pari a 1: somma i decimali.
+Se il numero intero è pari a 2: sottrai i decimali.
+Se il numero intero è pari a 3: moltiplica i decimali.
+Se il numero intero è pari a 4: dividi i decimali.
+
+Algoritmo #7
+Stampa l'intero contenuto di un array di stringhe.
+L'utente può scegliere la dimensione dell'array e i dati da inserire.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
