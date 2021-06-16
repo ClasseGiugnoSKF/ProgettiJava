@@ -28,8 +28,18 @@ public class GestioneIO {
 		return input;
 	}
 	
+	char leggiChar(String messaggio) {
+		System.out.println(messaggio);
+		char input = s.nextLine().charAt(0);
+		return input;
+	}
+	
 	void stampa(String messaggio) {
 		System.out.println(messaggio);
+	}
+	
+	void stampaNL(String messaggio) {
+		System.out.print(messaggio);
 	}
 	
 	void stampaInt(int num) {

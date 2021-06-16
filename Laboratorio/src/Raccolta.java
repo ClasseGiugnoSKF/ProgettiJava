@@ -156,7 +156,7 @@ public class Raccolta {
 		
 		// Algoritmo 9
 		void stampaAlfabeto() {
-			int i = 1;
+			byte i = 1;
 			for(char lettera = 'A';lettera<='Z';lettera++) {
 				if(!(lettera >= 'J' && lettera <= 'K' || lettera >= 'W' && lettera <= 'Y')) {
 					if(i>7) {
@@ -171,6 +171,148 @@ public class Raccolta {
 		
 		// Algoritmo 10
 		void fibonacci() {
-			// Coming SoonTM
+			int[] F = {0,1,1};
+			for(int n=2;F[2]<100;) {
+				int F2 = n-2;
+				if(F2 < 3) {
+					System.out.print(F[F2]+" ");
+					n++;
+				} else { // n diventa 5
+					F[2] = F[1] + F[0];
+					F[2] = F[2] + F[1];
+					System.out.println(F[2]);
+				}
+			}
+		}
+		
+		// Algoritmo 11
+		void sommaCoppie(int[] vettore) {
+			for(int i=0,cont=1;i<=vettore.length-1;i+=2,cont++) {
+				io.stampa("Coppia n."+(cont)+" = "+(vettore[i] + vettore[i+1]));
+			}
+		}
+		
+		// Algoritmo 12
+		void stampaVocali(String frase) {
+			frase = frase.replaceAll(" ", "").toLowerCase();
+			for(int i=0;i<frase.length();i++) {
+				if(verificaVocali(frase.charAt(i))) {
+					System.out.print(frase.charAt(i)+" ");
+				}
+			}
+		}
+		
+		
+		boolean verificaVocali(char carattere) {
+			if(carattere == 'a' || carattere == 'e' || carattere == 'i' 
+					|| carattere == 'o' || carattere == 'u') {
+				return true;
+			}
+				return false;
+		}
+		
+		// Algoritmo 13
+		void stampaVocaliLim(String frase) {
+			char[] vocali = new char[5];
+			frase = frase.replaceAll(" ", "").toLowerCase();
+			for(int i=0,inV=0;i<frase.length();i++) {
+				if(verificaVocali(frase.charAt(i))) {
+					boolean flag = true;
+					for(int k=0;k<vocali.length;k++) {
+						if(vocali[k] == frase.charAt(i)) {
+							flag = false;
+							break;
+						}
+					}
+					if(flag) {
+						vocali[inV] = frase.charAt(i);
+						inV++;
+						System.out.print(frase.charAt(i)+" ");
+					}
+				}
+			}
+		}
+		
+		// Algoritmo 14
+		void contaVocali(String frase) {
+			int cont = 0;
+			for(int i=0;i<frase.length();i++) {
+				if(verificaVocali(frase.charAt(i))) {
+					cont++;
+				}
+			}
+			System.out.println("\nNumero di vocali: "+cont);
+		}
+		
+		// Algoritmo 15
+		void sostituisciCarattere(String frase) {
+			char lettera = io.leggiChar("Inserisci un carattere da sostituire con uno spazio nella frase.");
+			frase = frase.replace(String.valueOf(lettera), " ");
+			System.out.println(frase);
+		}
+		
+		// Algoritmo 16
+		char[] creaAlfabeto() {
+			char[] alfabeto = new char[26];
+			char gen = 'A';
+			for(int i=0;gen<='Z';i++,gen++) {
+				alfabeto[i] = gen;
+			}
+			return alfabeto;
+		}
+		
+		void vettoreM(char[] alfabeto) {
+			for(int i=0;alfabeto[i]<=77;i++) {
+				if(alfabeto[i] == 77) {
+					io.stampaNL(alfabeto[i]+".\n");
+					break;
+				}
+				io.stampaNL(alfabeto[i]+",");
+			}
+		}
+		
+		void vettoreMP(char[] alfabeto) {
+			for(int i=12;alfabeto[i] >=77 && alfabeto[i] < 80;i++) {
+				if(alfabeto[i] == 79) {
+					io.stampaNL(alfabeto[i]+".\n");
+					break;
+				}
+				io.stampaNL(alfabeto[i]+",");
+			}
+		}
+		
+		void vettoreCGMP(char[] alfabeto) {
+			for(int i=2;alfabeto[i] <= 80;i++) {
+				if(alfabeto[i] == 80) {
+					io.stampaNL(alfabeto[i]+".\n");
+					break;
+				} else if(alfabeto[i] >= 67 && alfabeto[i] <= 71 || alfabeto[i] >= 77) {
+					io.stampaNL(alfabeto[i]+",");
+				}
+			}
+		}
+		
+		void asteriscoSingolo() {
+			for(int i=1;i<=6;i++) {
+				for(int k=0;k<i;k++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		}
+		
+		void asteriscoPiramide() {
+			for(int i=1;i<=13;i++) {
+				if(i>7) {
+					for(int k=0;k<=(13-i);k++) {
+						System.out.print("*");
+					}
+				} else {
+					for(int k=0;k<i;k++) {
+						System.out.print("*");
+					}
+				}
+				System.out.println();
+			}
 		}
 }
