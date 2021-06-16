@@ -171,17 +171,15 @@ public class Raccolta {
 		
 		// Algoritmo 10
 		void fibonacci() {
-			int[] F = {0,1,1};
-			for(int n=2;F[2]<100;) {
-				int F2 = n-2;
-				if(F2 < 3) {
-					System.out.print(F[F2]+" ");
-					n++;
-				} else { // n diventa 5
-					F[2] = F[1] + F[0];
-					F[2] = F[2] + F[1];
-					System.out.println(F[2]);
-				}
+			int[] f = {0,1,1};
+			for(int i=0;i<f.length;i++) {
+				io.stampaNL(f[i]+" ");
+			}
+			while(f[2] < 1000) {
+				f[0] = f[1];
+				f[1] = f[2];
+				f[2] = f[0] + f[1];
+				io.stampaNL(f[2] + " ");
 			}
 		}
 		

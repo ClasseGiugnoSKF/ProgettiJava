@@ -13,7 +13,17 @@ public class GestioneIO {
 				+ "7) Date due variabili di tipo int applicare l'algoritmo dello scambio (swap). Stampare il prima e dopo lo scambio.\n"
 				+ "8) Dato un vettore di interi non ordinato, ordinarlo dal più piccolo al più grande. NB: si consiglia l'uso dell'algoritmo dello swap\n"
 				+ "9) Stampa una matrice 3x7 contenente le lettere dell'alfabeto ITALIANO. NB: non è richiesto l'array multidimensionale\n"
-				+ "10) Fibonacci");
+				+ "10) Sequenza di Fibonacci\n"
+				+ "11) Somma a due a due, otto interi di un vettore, indicando l'i-esima coppia per ogni somma\n"
+				+ "12) Estrai le vocali da una frase e stampale (è possibile stampare più volte la stessa vocale)\n"
+				+ "13) Estrai le vocali ed ogni vocale può essere stampate solo una volta\n"
+				+ "14) Contare il numero di vocali in una stringa\n"
+				+ "15) Scegliere la lettera di una stringa da sostituire con uno spazio\n"
+				+ "16) Vettore char, visualizzare lettere minori o uguali ad M\n"
+				+ "17) Vettore char, visualizzare lettere comprese tra M (inclusa) e P (esclusa)\n"
+				+ "18) Vettore char, visualizzare lettere tra C (inclusa) e G (inclusa) ed M e P (inclusi)\n"
+				+ "19) Crea una semi piramide di asterischi\n"
+				+ "20) Crea una piramide intera di asterischi");
 	}
 	
 	String leggiStringa(String messaggio) {
