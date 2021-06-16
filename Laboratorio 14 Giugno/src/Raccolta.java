@@ -91,4 +91,86 @@ public class Raccolta {
 			io.stampa("La parola è palindroma.");
 		}
 	}
+	
+	// Algoritmo 6
+	String[] creaVettoreStringa() {
+		String[] vettore = new String[io.leggiIntero("Inserisci la dimensione del vettore: ")];
+		for(int i=0;i<vettore.length;i++) {
+			vettore[i]=io.leggiStringa("Inserisci nominativo n."+(i+1)+":");
+		}
+		return vettore;
+	}
+	
+	void ricercaNome(String[] vettore) {
+		String nome = io.leggiStringa("Chi vuoi cercare nell'array?");
+		boolean risultato = false;
+		for(int i=0;i<vettore.length;i++) {
+			if(vettore[i].equalsIgnoreCase(nome)) {
+				System.out.println(nome+" è stato trovato!");
+				risultato = true;
+				break;
+			}
+		}
+		if(!risultato) {
+			System.out.println(nome+" non trovato");
+		}
+	}
+	
+	// Algoritmo 7
+	void swapVariabili() {
+		int a = io.leggiIntero("Inserisci un valore nella variabile a: ");
+		int b = io.leggiIntero("Inserisci un valore nella variabile b: ");
+		
+		io.stampa("***PRIMA\n"
+				+ "a: "+a+
+				"\nb: "+b);
+		
+		int temp = a;
+		a = b;
+		b = temp;
+		
+		io.stampa("***DOPO\n"
+				+ "a: "+a+
+				"\nb: "+b);
+	}
+	
+	// Algoritmo 8
+		void ordinamentoVettore() {
+			int[] vettore = creaVettore(io.leggiIntero("Inserisci una dimensione: "));
+			for(int i=0;i<vettore.length;i++) {
+				int temp = vettore[i], temp2 = i;
+				for(int k=i+1;k<vettore.length;k++) {
+					if(vettore[k] < temp) {
+						temp = vettore[k];
+						temp2 = k;
+					}
+				}
+				vettore[temp2] = vettore[i];
+				vettore[i] = temp;
+			}
+		
+			for(int b=0;b<vettore.length;b++) {
+				System.out.println(vettore[b]);
+			}
+		}
+		
+		// Algoritmo 9
+		void stampaAlfabeto() {
+			int i = 1;
+			for(char lettera = 'A';lettera<='Z';lettera++) {
+				if(!(lettera >= 'J' && lettera <= 'K' || lettera >= 'W' && lettera <= 'Y')) {
+					if(i>7) {
+						System.out.println();
+						i=1;
+					}
+					System.out.print(lettera+" ");
+					i++;
+				}
+			}
+		}
+		
+		// Algoritmo 10
+		void fibonacci() {
+			// Coming SoonTM
+		}
 }

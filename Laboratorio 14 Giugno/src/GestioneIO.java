@@ -8,7 +8,12 @@ public class GestioneIO {
 				+ "2) Dato un vettore di interi stampare i numeri. L'utente deve scegliere se stampare i numeri pari o dispari\n"
 				+ "3) Dato un vettore di interi, stampare il valore minimo e il valore massimo.\n"
 				+ "4) Fare la somma e la media dei dati di un vettore di interi\n"
-				+ "5) Verificare se una stringa è palindroma");
+				+ "5) Verificare se una stringa è palindroma\n"
+				+ "6) Dato un vettore di stringhe, cercare un nominativo a scelta\n"
+				+ "7) Date due variabili di tipo int applicare l'algoritmo dello scambio (swap). Stampare il prima e dopo lo scambio.\n"
+				+ "8) Dato un vettore di interi non ordinato, ordinarlo dal più piccolo al più grande. NB: si consiglia l'uso dell'algoritmo dello swap\n"
+				+ "9) Stampa una matrice 3x7 contenente le lettere dell'alfabeto ITALIANO. NB: non è richiesto l'array multidimensionale\n"
+				+ "10) Fibonacci");
 	}
 	
 	String leggiStringa(String messaggio) {

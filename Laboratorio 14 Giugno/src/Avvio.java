@@ -20,6 +20,22 @@ public class Avvio {
 		case 5:
 			r.verificaPalindroma();
 			break;
+		case 6:
+			String[] nominativi = r.creaVettoreStringa();
+			r.ricercaNome(nominativi);
+			break;
+		case 7:
+			r.swapVariabili();
+			break;
+		case 8:
+			r.ordinamentoVettore();
+			break;
+		case 9:
+			r.stampaAlfabeto();
+			break;
+		case 10:
+			r.fibonacci();
+			break;
 		default:
 			io.stampaErrore("Scegli un'opzione corretta!");
 		}
