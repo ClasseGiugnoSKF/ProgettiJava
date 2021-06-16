@@ -43,6 +43,17 @@ Sviluppo in serie di Fibonacci.
 
 Algoritmo #11
 Somma a due a due otto interi di un vettore, indicando l'i-esima coppia per ogni somma.
+Esempio:
+int[] a = {4,7,9,13,45,23,55,12};      
+output:
+coppia n.1 
+    11 (4+7)
+coppia n.2
+    22 (9+13)
+...
+coppia n. 8
+    67 (55+12)
+
 
 Algoritmo #12
 Estrai le vocali da una frase e stampale(è possibile stampare più volte la stessa vocale).
