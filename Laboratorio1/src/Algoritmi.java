@@ -126,13 +126,13 @@ public class Algoritmi {
 		boolean flag = false;
 		for(int i=0; i<elencoNominativi.length; i++) {
 			if(elencoNominativi[i].equalsIgnoreCase("Davide")) {
-				System.out.println("Nominativo trovato");
+				g.stampa("Nominativo trovato");
 				flag = true;
 				break;
 			}
 		}
 		if(flag == false) {
-			System.out.println("Nominativo non trovato");
+			g.stampa("Nominativo non trovato");
 		}
 	}
 	
@@ -141,15 +141,15 @@ public class Algoritmi {
 	void swap() {
 		int a = 4;
 		int b = 17;
-		System.out.println("Prima dello swap");
-		System.out.println("La variabile a contiene il valore " + a);
-		System.out.println("La variabile b contiene il valore " + b);
+		g.stampa("Prima dello swap");
+		g.stampa("La variabile a contiene il valore " + a);
+		g.stampa("La variabile b contiene il valore " + b);
 		int temp = a;
 		a = b;
 		b = temp;
-		System.out.println("Dopo lo swap");
-		System.out.println("La variabile a contiene il valore " + a);
-		System.out.println("La variabile b contiene il valore " + b);		
+		g.stampa("Dopo lo swap");
+		g.stampa("La variabile a contiene il valore " + a);
+		g.stampa("La variabile b contiene il valore " + b);		
 	}
 	
 	//Dato un vettore di interi non ordinato, ordinarlo dal più piccolo
@@ -157,11 +157,11 @@ public class Algoritmi {
 	void ordinamentoSwap() {
 		int[] numeri = {45, 16, 98, 2, 30};
 		int temp = 0;
-		System.out.println("Il vettore contiene i seguenti valori:");
+		g.stampa("Il vettore contiene i seguenti valori:");
 		for(int i=0; i<numeri.length; i++) {
-			System.out.print(numeri[i] + "  ");
+			g.stampa(numeri[i] + "  ");
 		}
-		System.out.println();
+		g.stampa("\n");
 		boolean flag = false;
 		for(int i=0; i<numeri.length-1; i++) {
 			flag = false;
@@ -177,11 +177,11 @@ public class Algoritmi {
 				break;
 			}
 		}
-		System.out.println("Il vettore ordinato è il seguente:");
+		g.stampa("Il vettore ordinato è il seguente:");
 		for(int i=0; i<numeri.length; i++) {
-			System.out.print(numeri[i] + "  ");
+			g.stampa(numeri[i] + "  ");
 		}
-		System.out.println();
+		g.stampa("\n");
 	}
 	
 	//Stampare una matrice 3x7 contenente le lettere dell'alfabeto
@@ -197,7 +197,6 @@ public class Algoritmi {
 				System.out.println();
 			}
 		}
-		System.out.println();
 	}
 	
 	//Risolvi l'esericzio precedente usando il codice ASCII
@@ -209,20 +208,32 @@ public class Algoritmi {
 			for(int i=0; i<lettereInglesi.length; i++) {
 				if(c == lettereInglesi[i]) {
 					flag = true;
+					break;
 				}
 			}
 			if(!flag) {
 				System.out.print(c + " ");
 			}
-			if(c == 71 || c == 80 || c == 90) {
+			if(c == 71 || c == 80) {
 				System.out.println();
 			}
 			c++;
 			flag = false;
 		}
 	}
+
+	void alfabetoAsciiVariante() {
+		for(char c=65; c<=90; c++) {			
+			if(c!=74 && c!=75 && c!=87 && c!=88 && c!=89) {
+				System.out.print(c + " ");				
+			}
+			if(c==71 || c==80) {
+				System.out.println();
+			}	
+		}
+	}
 	
-	void successioneFibonaccio() {
+	void successioneFibonacci() {
 		long[] f = new long[3];
 		f[0] = 0;
 		f[1] = 1;
@@ -235,6 +246,5 @@ public class Algoritmi {
 			f[i+2] = f[i] + f[i+1];
 			System.out.print(f[i+2] + " ");
 		}
-		System.out.println();
 	}
 }

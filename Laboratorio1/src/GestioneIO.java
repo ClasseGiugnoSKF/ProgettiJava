@@ -45,7 +45,8 @@ public class GestioneIO {
 						"8) Ordinamento di un vettore di interi\n" +
 						"9) Stampa matrice 3x7 con alfabeto\n" +
 						"10) Stampa matrice 3x7 con alfabeto (ASCII)\n" +
-						"11) Stampa successione di FIbonacci";
+						"11) Stampa matrice 3x7 con alfabeto (ASCII variante)\n" +
+						"12)Stampa successione di FIbonacci";
 		stampa(frase);
 	}
 	

@@ -40,13 +40,16 @@ public class Avvio {
 				a.alfabetoAscii();
 				break;
 			case 11:
-				a.successioneFibonaccio();
+				a.alfabetoAsciiVariante();
+				break;
+			case 12:
+				a.successioneFibonacci();
 				break;
 			default:
 				g.stampaErrore("Attenzione! L'opzione non è valida.");
 			}
 			
-		}while(g.leggiString("Vuoi continuare?(si/no)").equalsIgnoreCase("si"));
+		}while(g.leggiString("\nVuoi continuare?(si/no)").equalsIgnoreCase("si"));
 	
 		g.stampa("Fine programma!");
 	}
