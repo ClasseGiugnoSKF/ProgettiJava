@@ -233,6 +233,7 @@ public class Algoritmi {
 		}
 	}
 	
+	//Stampa i numeri della successione di Fibonacci
 	void successioneFibonacci() {
 		long[] f = new long[3];
 		f[0] = 0;
@@ -247,4 +248,240 @@ public class Algoritmi {
 			System.out.print(f[i+2] + " ");
 		}
 	}
+	
+	//Somma a due a due otto interi di un vettore, indicando l'i-esima
+	//coppia per ogni somma.
+	void sommaCoppie() {
+		int[] numeri = new int[8];
+		g.stampa("Inserisci 8 interi");
+		for(int i=0; i<numeri.length; i++) {
+			numeri[i] = g.leggiIntero("Inserisci valore:");
+		}
+		for(int i=0; i<numeri.length; i+=2) {
+			g.stampa("Coppia n." + (i/2+1));
+			g.stampa(numeri[i] + numeri[i+1]);
+		}
+	}
+
+	//Estrarre le vocali da una frase e stampale (con ripetizione)
+	void vocaliRipetizione() {
+		String frase = g.leggiString("Inserisci una frase");
+		for(int i=0; i<frase.length(); i++) {
+			switch(String.valueOf(frase.charAt(i)).toLowerCase()) {
+			case "a":
+				g.stampa(frase.charAt(i) + " ");
+				break;
+			case "e":
+				g.stampa(frase.charAt(i) + " ");
+				break;
+			case "i":
+				g.stampa(frase.charAt(i) + " ");
+				break;
+			case "o":
+				g.stampa(frase.charAt(i) + " ");
+				break;
+			case "u":
+				g.stampa(frase.charAt(i) + " ");
+				break;
+			}
+		}
+	}
+	
+	//Estrai le vocali da una frase e stampala (senza ripetizioni)
+	void vocaliSenzaRipetizioni() {
+		String frase = g.leggiString("Inserisci una frase").toLowerCase();
+		if(frase.contains("a")) {
+			g.stampa("a");
+		}
+		if(frase.contains("e")) {
+			g.stampa("e");
+		}
+		if(frase.contains("i")) {
+			g.stampa("i");
+		}
+		if(frase.contains("o")) {
+			g.stampa("o");
+		}
+		if(frase.contains("u")) {
+			g.stampa("u");
+		}
+	}
+	
+	//Conta numero di vocali in una stringa
+	void contaVocali() {
+		String frase = g.leggiString("Inserisci una stringa");
+		int contatore = 0;
+		for(int i=0; i<frase.length(); i++) {
+			switch(String.valueOf(frase.charAt(i)).toLowerCase()) {
+			case "a":
+				contatore++;
+				break;
+			case "e":
+				contatore++;
+				break;
+			case "i":
+				contatore++;
+				break;
+			case "o":
+				contatore++;
+				break;
+			case "u":
+				contatore++;
+				break;
+			}
+		}
+		g.stampa("Il numero di vocali presenti nella stringa è " + contatore);
+	}
+
+	//Scegliere la lettera di una stringa da sostituire con uno spazio
+	void sostituisciLettera() {
+		String frase = g.leggiString("Inserisci una stringa");
+		String s = g.leggiString("Quale lettera vuoi sostituire con uno spazio?");
+		g.stampa(frase.replace(s, " "));
+	}
+	
+	//Creare un vettore di char con le lettere dell'alfabeto e visualizzare
+	//in orizzontale tutte le lettere minori o uguali di 'M'. Le lettere
+	//devono essere separate da una virgola e l'ultima lettera deve terminare
+	//con un punto.
+	void lettereAlfabeto() {
+		char [] lettere = new char[13];
+		int contatore = 0;
+		for(char i=65; i<=77; i++) {
+			lettere[contatore] = i;
+			if(i==77) {
+				System.out.println(lettere[contatore] + ".");
+			} else {
+				System.out.print(lettere[contatore] + ",");
+				contatore++;
+			}
+		}
+	}
+
+	//Lettere compre tra 'M' (incluso) e 'P' (escluso)
+	void lettereAlfabeto2() {
+		char [] lettere = new char[3];
+		int contatore = 0;
+		for(char i=77; i<80; i++) {
+			lettere[contatore] = i;
+			if(i==79) {
+				System.out.println(lettere[contatore] + ".");
+			} else {
+				System.out.print(lettere[contatore] + ",");
+				contatore++;
+			}
+		}
+	}
+
+	//Lettere compre tra 'C' (compreso) e 'G' (compreso) ed
+	//'M' (compreso) e 'P' (compreso)
+	void lettereAlfabeto3() {
+		char [] lettere = new char[9];
+		int contatore = 0;
+		for(char i=67; i<=80; i++) {
+			lettere[contatore] = i;
+			if(i==71) {
+				i += 5;
+			}
+			if(i==80) {
+				System.out.println(lettere[contatore] + ".");
+			} else {
+				System.out.print(lettere[contatore] + ",");
+				contatore++;
+			}
+		}
+	}
+	
+	void stampaAsterischi1() {
+		int iterazioni = 1;
+		while(iterazioni <= 6) {
+			for(int i=0; i<iterazioni; i++) {
+				System.out.print("*");
+			}
+			System.out.println();
+			iterazioni++;
+		}
+	}
+	
+	void stampaAsterischi2() {
+		int iterazioni = 1;
+		int numAsterischi = 1;
+		while(iterazioni <= 11) {
+			for(int i=0; i<numAsterischi; i++) {
+				System.out.print("*");
+			}
+			System.out.println();
+			if(iterazioni<6) {
+				numAsterischi++;
+			} else {
+				numAsterischi--;
+			}
+			iterazioni++;
+		}
+	}
+	
+	//Ricerca lineare
+	void ricercaLineare() {
+		int[] numeri = new int[g.leggiIntero("Inserisci dimensione vettore:")];
+		g.stampa("Inserisci i valori.");
+		for(int i=0; i<numeri.length; i++) {
+			numeri[i] = g.leggiIntero("Inserisci valore:");
+		}
+		int elementoCercato = g.leggiIntero("Quale elemento vuoi cercare?");
+
+		boolean flag = false;
+		for(int i=0; i<numeri.length; i++) {
+			if(numeri[i] == elementoCercato) {
+				g.stampa("Elemento trovato");
+				flag = true;
+			}
+		}
+		if(!flag) {
+			g.stampa("Elemento non trovato");
+		}
+	}
+	
+	//Ricerca dicotomica
+	//Ricorda il vettore deve essere ordinato.
+	void ricercaBinaria() {
+		int[] numeri = new int[g.leggiIntero("Inserisci dimensione vettore:")];
+		g.stampa("Inserisci i valori.");
+		for(int i=0; i<numeri.length; i++) {
+			numeri[i] = g.leggiIntero("Inserisci valore:");
+		}
+		int elementoCercato = g.leggiIntero("Quale elemento vuoi cercare?");
+
+		int min = 0;
+		int max = numeri.length-1;
+		int mezzo = 0;
+		boolean flag = false;
+		while(!flag && min<=max) {
+			mezzo = (max+min)/2;
+			if(numeri[mezzo] == elementoCercato)
+				flag = true;
+			if(numeri[mezzo] > elementoCercato)
+				max = mezzo - 1;
+			else
+				min = mezzo + 1;
+		}
+		if(flag)
+			g.stampa("Elemento trovato nella posizione " + mezzo);
+		else
+			g.stampa("Elemento non trovato");
+	}
+
+	void contaAvantiIndietro(int inizio, int fine) {
+		int numeroIterazioni;
+		if(inizio < fine)
+			numeroIterazioni = fine-inizio;
+		else
+			numeroIterazioni = inizio-fine;
+		for(int i=0; i<=numeroIterazioni; i++) {
+			if(inizio > fine)
+				System.out.println(inizio - i);
+			else
+				System.out.println(inizio + i);
+		}
+	}
+
 }

@@ -46,7 +46,20 @@ public class GestioneIO {
 						"9) Stampa matrice 3x7 con alfabeto\n" +
 						"10) Stampa matrice 3x7 con alfabeto (ASCII)\n" +
 						"11) Stampa matrice 3x7 con alfabeto (ASCII variante)\n" +
-						"12)Stampa successione di FIbonacci";
+						"12) Stampa successione di Fibonacci\n" +
+						"13) Somma coppie di interi\n" +
+						"14) Stampa vocali con ripetizione\n" +
+						"15) Stampa vocali senza ripetizione\n" +
+						"16) Conta vocali in una stringa\n" +
+						"17) Sostituisci lettera in una stringa con uno spazio\n" +
+						"18) Stampare le lettere fino alla M\n" +
+						"19) Stampare le lettere tra M (incluso) e P (escluso)\n" +
+						"20) Stampare le lettere tra C e G e tra M e P (compresi)\n" +
+						"21) Stampa asterischi\n" +
+						"22) Stampa asterischi variante\n" +
+						"23) Ricerca lineare\n" +
+						"24) Ricerca dicotomica\n" +
+						"25) Conta avanti e indietro\n";
 		stampa(frase);
 	}
 	
