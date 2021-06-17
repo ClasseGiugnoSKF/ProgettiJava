@@ -110,6 +110,19 @@ Algoritmo #20 (per chi si è divertito con il 19)
 **
 *
 
+Algoritmo #21
+Creare una matrice 10x10 dove ogni riga rappresenta una tabellina
+NB!! Usare un array multidimesione
+1 2 3 4
+2 4 6 8
+3 6 9 12
+
+Algoritmo #22
+Creare una matrice 8x5
+2 array monodimensione per giorni e orari
+1 array multidimensione di tipo int per avere la matrice numerica
+
+
 //////////////////////////////////////////////////////////////////////////////////////
 Algoritmi suggeriti a chi si sente ancora un po' arruginito:
 Algoritmo #1
