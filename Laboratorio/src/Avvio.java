@@ -78,9 +78,6 @@ public class Avvio {
 		case 24:
 			r.stampaMeteo();
 			break;
-		case 25:
-			r.matrice4x3();
-			break;
 		default:
 			io.stampaErrore("Scegli un'opzione corretta!");
 		}
