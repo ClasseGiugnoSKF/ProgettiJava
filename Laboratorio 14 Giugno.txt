@@ -111,6 +111,16 @@ Algoritmo #20 (per chi si è divertito con il 19)
 *
 
 Algoritmo #21
+Crare una matrice con i valori della slide, e che vengano stampati nelle stesse esatte posizioni.
+
+Algoritmo #22
+Ottenere una matrice 3x3 con una diagonale in cui leggo 1,2,3
+1 0 0
+0 2 0
+0 0 3
+NB!! Si possono fare massimo 3 assegnazioni.
+
+Algoritmo #23
 Creare una matrice 10x10 dove ogni riga rappresenta una tabellina
 NB!! Usare un array multidimesione
 1 2 3 4
