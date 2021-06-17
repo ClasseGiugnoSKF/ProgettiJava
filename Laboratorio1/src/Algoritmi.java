@@ -1,3 +1,5 @@
+import java.util.Random;
+import java.util.Scanner;
 
 public class Algoritmi {
 
@@ -483,5 +485,123 @@ public class Algoritmi {
 				System.out.println(inizio + i);
 		}
 	}
+	
+	//Creare una matrice 10x10 dove ogni riga rappresenta una
+	//tabellina. (Nota bene: usare un array multidimensionale)
+	void matriceTabelline() {
+		int [][] tabelline = new int[10][10];
+		for(int i=0; i<10; i++) {
+			for(int j=0; j<10; j++) {
+				tabelline[i][j] = (i+1)*(j+1);
+			}
+		}
+		
+		for(int i=0; i<10; i++) {
+			for(int j=0; j<10; j++) {
+				System.out.print(tabelline[i][j] + "\t");
+			}
+			System.out.println();
+		}
+	}
+	
+	//Creare una matrice 8x5 contenente giorni e temperature
+	void matriceTemperature() {
+		String [] primaRiga = {"Giorno   ", "[h]:0-6  ", "[h]:7-13 ", "[h]:14-19", "[h]:20-0 "};
+		String [] primaColonna = {"Lunedì   ", "Martedì  ", "Mercoledì", 
+				"Giovedì  ", "Venerdì  ", "Sabato   ", "Domenica "};
+		int [][] temperature = new int[7][4];
+		Random random = new Random();
+		
+		for(int i=0; i<7; i++) {
+			for(int j=0; j<4; j++) {
+				temperature[i][j] = random.nextInt(40);
+			}
+		}
+		
+		//Stampa prima riga
+		for(int i=0; i<primaRiga.length; i++) {
+			System.out.print(primaRiga[i] + "\t");
+		}
+		System.out.println();
+		
+		//Stampa resto della matrice
+		for(int i=0; i<temperature.length; i++) {
+			System.out.print(primaColonna[i] + "\t");
+			for(int j=0; j<temperature[0].length; j++) {
+				System.out.print(temperature[i][j] + "\t\t");
+			}
+			System.out.println();
+		}
+	}
 
+	//Crea matrice e stampala.
+	void matrice() {
+		int[][] matrix = new int[3][3];
+		matrix[0][0] = 13;
+		matrix[0][1] = 24;
+		matrix[0][2] = 89;
+		matrix[1][0] = 56;
+		matrix[1][1] = 30;
+		matrix[1][2] = 11;
+		matrix[2][0] = 78;
+		matrix[2][1] = 12;
+		matrix[2][2] = 3;
+		
+		for(int i=0; i<matrix.length; i++) {
+			for(int j=0; j<matrix[0].length; j++) {
+				System.out.print(matrix[i][j] + " ");
+			}
+			System.out.println();
+		}	
+	}
+
+	//Matrice diagonale
+	void matriceDiagonale() {
+		int[][] matrix = new int[3][3];
+		matrix[0][0] = 1;
+		matrix[1][1] = 2;
+		matrix[2][2] = 3;
+
+		for(int i=0; i<matrix.length; i++) {
+			for(int j=0; j<matrix[0].length; j++) {
+				System.out.print(matrix[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	//Matrice trasposta
+	void matriceTrasposta() {
+		Scanner scan = new Scanner(System.in);
+		int numeroRighe = g.leggiIntero("Inserisci numero righe");
+		int numeroColonne = g.leggiIntero("Inserisci numero colonne");
+		char[][] matrix = new char[numeroRighe][numeroColonne];
+		//Lettura matrice
+		g.stampa("Inserisci i valori della matrice");
+		for(int i=0; i<numeroRighe; i++) {
+			for(int j=0; j<numeroColonne; j++) {
+				System.out.print("matrix[" +i+ "][" +j+ "]= ");
+				matrix[i][j] = scan.nextLine().charAt(0);
+			}
+		}
+		//Stampa matrice
+		System.out.println("La matrice inserita è:");
+		for(int i=0; i<numeroRighe; i++) {
+			for(int j=0; j<numeroColonne; j++) {
+				System.out.print(matrix[i][j] + " ");
+			}
+			System.out.println();
+		}
+		//Stampa matrice trasposta
+		System.out.println("La matrice trasposta è:");
+		for(int i=0; i<numeroRighe; i++) {
+			for(int j=0; j<numeroColonne; j++) {
+				System.out.print(matrix[j][i] + " ");
+			}
+			System.out.println();
+		}
+		scan.close();
+	}
+	
+	
 }

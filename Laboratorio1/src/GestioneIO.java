@@ -59,7 +59,12 @@ public class GestioneIO {
 						"22) Stampa asterischi variante\n" +
 						"23) Ricerca lineare\n" +
 						"24) Ricerca dicotomica\n" +
-						"25) Conta avanti e indietro\n";
+						"25) Conta avanti e indietro\n" +
+						"26) Matrice tabelline\n" +
+						"27) Matrice temperature\n" +
+						"28) Stampa matrice\n" +
+						"29) Stampa matrice diagonale\n" +
+						"30) Matrice trasposta\n";
 		stampa(frase);
 	}
 	

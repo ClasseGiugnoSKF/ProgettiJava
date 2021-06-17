@@ -85,6 +85,21 @@ public class Avvio {
 				a.contaAvantiIndietro(4, 10);
 				a.contaAvantiIndietro(15, 5);
 				break;
+			case 26:
+				a.matriceTabelline();
+				break;
+			case 27:
+				a.matriceTemperature();
+				break;
+			case 28:
+				a.matrice();
+				break;
+			case 29:
+				a.matriceDiagonale();
+				break;
+			case 30:
+				a.matriceTrasposta();
+				break;
 			default:
 				g.stampaErrore("Attenzione! L'opzione non è valida.");
 			}
