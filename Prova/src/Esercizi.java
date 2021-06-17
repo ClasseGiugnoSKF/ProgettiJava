@@ -10,6 +10,7 @@ public class Esercizi {
 				matrice[z][x]=Integer.parseInt(input.nextLine());
 			}
 		for (int z=0;z<2;z++)
+			System.out.print();
 			for (int x=0;x<3;x++) {
 				System.out.println("matrice["+(z+1)+"]["+(x+1)+"]:"+matrice[z][x]+" ");
 			}
