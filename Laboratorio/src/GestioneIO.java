@@ -23,7 +23,11 @@ public class GestioneIO {
 				+ "17) Vettore char, visualizzare lettere comprese tra M (inclusa) e P (esclusa)\n"
 				+ "18) Vettore char, visualizzare lettere tra C (inclusa) e G (inclusa) ed M e P (inclusi)\n"
 				+ "19) Crea una semi piramide di asterischi\n"
-				+ "20) Crea una piramide intera di asterischi");
+				+ "20) Crea una piramide intera di asterischi\n"
+				+ "21) Creare una matrice con i valori della slide 'Logica di programmazione avanzata'\n"
+				+ "22) Ottenere una matrice 3x3 con una diagonale in cui leggo 1-2-3 in solo tre assegnazioni\n"
+				+ "23) Stampa una tabellina 10x10\n"
+				+ "24) Stampa una previsione meteo, matrice 8x6");
 	}
 	
 	String leggiStringa(String messaggio) {

@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 
 public class Raccolta {
 	GestioneIO io = new GestioneIO();
@@ -269,6 +270,8 @@ public class Raccolta {
 			}
 		}
 		
+		// Algoritmo 17
+		
 		void vettoreMP(char[] alfabeto) {
 			for(int i=12;alfabeto[i] >=77 && alfabeto[i] < 80;i++) {
 				if(alfabeto[i] == 79) {
@@ -278,6 +281,8 @@ public class Raccolta {
 				io.stampaNL(alfabeto[i]+",");
 			}
 		}
+		
+		// Algoritmo 18
 		
 		void vettoreCGMP(char[] alfabeto) {
 			for(int i=2;alfabeto[i] <= 80;i++) {
@@ -290,6 +295,8 @@ public class Raccolta {
 			}
 		}
 		
+		// Algoritmo 19
+		
 		void asteriscoSingolo() {
 			for(int i=1;i<=6;i++) {
 				for(int k=0;k<i;k++) {
@@ -298,6 +305,8 @@ public class Raccolta {
 				System.out.println();
 			}
 		}
+		
+		// Algoritmo 20
 		
 		void asteriscoPiramide() {
 			for(int i=1;i<=13;i++) {
@@ -311,6 +320,96 @@ public class Raccolta {
 					}
 				}
 				System.out.println();
+			}
+		}
+		
+		// Algoritmo 21
+		
+		void stampaMatriceInt(int[][] matrice) {
+			for(int i=0;i<matrice.length;i++) {
+				for(int k=0;k<matrice.length;k++) {
+					io.stampaNL(matrice[i][k]+" \t");
+				}
+				io.stampaNL("\n");
+			}
+		}
+		
+		void matriceSlide() {
+			int[][] matrice = new int[3][3];
+			matrice[0][0] = 13;
+			matrice[0][1] = 24;
+			matrice[0][2] = 89;
+			matrice[1][0] = 56;
+			matrice[1][1] = 30;
+			matrice[1][2] = 11;
+			matrice[2][0] = 78;
+			matrice[2][1] = 12;
+			matrice[2][2] = 3;
+			
+			stampaMatriceInt(matrice);
+
+		}
+		
+		// Algoritmo 22
+		
+		void matriceDiagonale() {
+			int matrice[][] = new int[3][3];
+			for(int i=0;i<matrice.length;i++) {
+				matrice[i][i] = i+1;
+			}
+			stampaMatriceInt(matrice);
+		}
+		
+		// Algoritmo 23
+		
+		void stampaTabella() {
+			int[][] matrice = new int[10][10];
+			for(int i=0;i<matrice.length;i++) {
+				matrice[i][0] = i+1;
+				for(int k=1;k<matrice.length;k++) {
+					matrice[i][k] = (i+1) * (k+1);
+				}
+				
+			}
+			for(int riga=0;riga<matrice.length;riga++) {
+				for(int col=0;col<matrice.length;col++) {
+					io.stampaNL(matrice[riga][col]+" ");
+				}
+				io.stampa("");
+			}
+		}
+		
+		// Algoritmo 24
+		
+		int randomInt(double max, int min) {
+			return (int)(Math.random() * max) + min;
+		}
+		
+		int[][] creaMatrixMeteo(int[][] matrice) {
+			for(int r=0;r<matrice.length;r++) {
+				for(int c=0;c<matrice[1].length;c++) {
+					matrice[r][c] = randomInt(35, 5);
+				}
+			}
+			return matrice;
+		}
+		
+		void stampaMeteo() {
+			String[] layoutO = {"Giorno", "[h]:0-6", "[h]:7-13", "[h]:14-19", "[h]:20-0"};
+			String[] layoutV = {"Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"};
+			
+			int[][] matrice = new int[7][4];
+			matrice = creaMatrixMeteo(matrice);			
+			for(int o=0;o<layoutO.length;o++) {
+				io.stampaNL(layoutO[o]+" ");
+			}
+			
+			for(int v=0;v<layoutV.length;v++) {
+				io.stampaNL("\n"+layoutV[v]);
+				for(int t=0;t<matrice[0].length;t++) {
+					io.stampaNL(" "+matrice[v][t]);
+				}
+				
 			}
 		}
 }

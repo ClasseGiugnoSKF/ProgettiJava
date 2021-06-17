@@ -66,6 +66,21 @@ public class Avvio {
 		case 20:
 			r.asteriscoPiramide();
 			break;
+		case 21:
+			r.matriceSlide();
+			break;
+		case 22:
+			r.matriceDiagonale();
+			break;
+		case 23:
+			r.stampaTabella();
+			break;
+		case 24:
+			r.stampaMeteo();
+			break;
+		case 25:
+			r.matrice4x3();
+			break;
 		default:
 			io.stampaErrore("Scegli un'opzione corretta!");
 		}
