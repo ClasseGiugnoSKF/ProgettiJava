@@ -97,7 +97,15 @@ public class Raccolta {
 	String[] creaVettoreStringa() {
 		String[] vettore = new String[io.leggiIntero("Inserisci la dimensione del vettore: ")];
 		for(int i=0;i<vettore.length;i++) {
-			vettore[i]=io.leggiStringa("Inserisci nominativo n."+(i+1)+":");
+			vettore[i]=io.leggiStringa("Inserisci nominativo n."+(i+1)+": ");
+		}
+		return vettore;
+	}
+	
+	int[] creaVettoreInt() {
+		int[] vettore = new int[io.leggiIntero("Inserisci la dimensione del vettore: ")];
+		for(int i=0;i<vettore.length;i++) {
+			vettore[i]=io.leggiIntero("Inserisci numero n."+(i+1)+": ");
 		}
 		return vettore;
 	}
@@ -321,6 +329,26 @@ public class Raccolta {
 				}
 				System.out.println();
 			}
+		}
+		
+		int[][] creaMatriceInt(){
+			int[][] matrice = new int[io.leggiIntero("Inserisci quante righe vuoi nella tua matrice: ")][io.leggiIntero("Inserisci quante colonne vuoi nella tua matrice: ")];
+			for(int i=0;i<matrice.length;i++) {
+				for(int k=0;k<matrice[k].length;k++) {
+					matrice[i][k] = io.leggiIntero("Inserisci un valore per riga n."+i+" e colonna n."+k+": ");
+				}
+			}
+			return matrice;
+		}
+		
+		String[][] creaMatriceStringa(){
+			String[][] matrice = new String[io.leggiIntero("Inserisci quante righe vuoi nella tua matrice: ")][io.leggiIntero("Inserisci quante colonne vuoi nella tua matrice: ")];
+			for(int i=0;i<matrice.length;i++) {
+				for(int k=0;k<matrice[k].length;k++) {
+					matrice[i][k] = io.leggiStringa("Inserisci un valore per riga n."+i+" e colonna n."+k+": ");
+				}
+			}
+			return matrice;
 		}
 		
 		// Algoritmo 21
