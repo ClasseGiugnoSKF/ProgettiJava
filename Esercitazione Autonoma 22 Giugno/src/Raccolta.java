@@ -1,16 +1,15 @@
 
 public class Raccolta {
 	GestioneIO io = new GestioneIO();
-
-
-	public void algoritmo1() {
+	
+	void algoritmo1() {
 		int[] array = {4,21,56,12,34,53,12,54,20,10};
 		for(int i=0;i<array.length/2;i++) {
 			System.out.println(array[i]+" "+array[array.length-1-i]);
 		}
 	}
 	
-	public void algoritmo2() {
+	void algoritmo2() {
 		int[] array1 = {6,23,91,30,12};
 		int[] array2 = {4,23,50,50,04};
 		
@@ -21,7 +20,7 @@ public class Raccolta {
 		}		
 	}
 	
-	public void algoritmo3() {
+	void algoritmo3() {
 		int n = io.leggiIntero("Quanto righe vuoi che sia lungo il rombo?");
 		int spazio = n-1;
 		for(int i=1;i<=n;i++) {
@@ -47,7 +46,7 @@ public class Raccolta {
 		}		
 	}
 
-	public void algoritmo4() {
+	void algoritmo4() {
 		String frase = "Goooooooal";
 		frase = frase.toLowerCase();
 		if(frase.contains(" ") || frase.contains(",") || frase.contains(".")) {
@@ -73,7 +72,7 @@ public class Raccolta {
 		System.out.println("Ci sono più vocali che consonanti.");		
 	}
 	
-	public void algoritmo5() {
+	void algoritmo5() {
 		String frase = io.leggiStringa("Inserisci una frase: ").toLowerCase().replaceAll("\\.|,| ", "");
 		for(int i=0;i<frase.length()/2;i++) {
 			if(frase.charAt(i) != frase.charAt(frase.length()-1-i)) {
@@ -87,7 +86,7 @@ public class Raccolta {
 		}		
 	}
 	
-	public void algoritmo6() {
+	void algoritmo6() {
 		String[][] matrice = {
 				{"Harry", "Lenny", "Benny", "Accade a Milano"},
 				{"220", "25", "110", "50"}
@@ -100,7 +99,7 @@ public class Raccolta {
 		}	
 	}
 	
-	public void algoritmo7() {
+	void algoritmo7() {
 		int somma = 0;
 		for(int i=1;i<=1000;i++) {
 			if(i%3 == 0 || i%5 == 0) {
@@ -110,7 +109,7 @@ public class Raccolta {
 		System.out.println(somma);	
 	}
 	
-	public void algoritmo8() {
+	void algoritmo8() {
 		String[] nominativi = {"Alberto", "Mario", "Peppo", "Salvatore", "Cinzia"};
 		
 		for(int i=0;i<nominativi.length;i++) {
@@ -126,7 +125,7 @@ public class Raccolta {
 		io.stampaVettoreString(nominativi);		
 	}
 	
-	public void algoritmo9() {
+	void algoritmo9() {
 		int fattoriale = 1;
 		for(int i=2;i<=5;i++) {
 			fattoriale*=i;
@@ -134,7 +133,7 @@ public class Raccolta {
 		System.out.println(fattoriale);	
 	}
 	
-	public void algoritmo10() {
+	void algoritmo10() {
 		String parola = "";
 		do {
 			parola = io.leggiStringa("Inserisci una parola: ").toLowerCase();
@@ -156,7 +155,7 @@ public class Raccolta {
 	}		
 	}
 	
-	public void algoritmo11() {
+	void algoritmo11() {
 		int dim = io.leggiIntero("Di che dimensione vuoi la tua matrice?");
 		int[][] matrice = new int[dim][dim];
 		
@@ -178,7 +177,7 @@ public class Raccolta {
 				+ (matrice[2][0] * ( ( matrice[0][1] * matrice[1][2] ) - ( matrice[0][2] * matrice[1][1] )))));		
 	}
 	
-	public void algoritmo12() {
+	void algoritmo12() {
 		int cateto = 5;
 		
 		for(int i=0;i<cateto;i++) {
