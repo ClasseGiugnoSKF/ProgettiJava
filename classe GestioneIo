@@ -1,0 +1,30 @@
+package gestionePersona2;
+import java.util.Scanner;
+
+public class GestoreIO {
+	public String inserisciStringa(String s) {
+		System.out.println(s);
+		Scanner scanner =new Scanner(System.in);
+		return scanner.nextLine();
+	}
+	public int inserisciIntero(String s) {
+		System.out.println(s);
+		Scanner io =new Scanner(System.in);
+		return Integer.parseInt(io.nextLine());
+	}
+	public void stampaPersona(Persona persona) {
+		System.out.println("Nome:"+persona.getNome());
+		System.out.println("Cognome:"+persona.getCognome());
+		System.out.println("Età:"+persona.getEta());
+		System.out.println("LuogoDiNascita:"+persona.getLuogoDiNascita());
+		System.out.println("Cf:"+persona.getCf());
+	}
+
+	public void inserimento(Persona p) {
+		p.setNome(inserisciStringa("nome:"));
+		p.setCognome(inserisciStringa("cognome:"));
+		p.setEta(inserisciIntero("età:"));
+		p.setLuogoDiNascita(inserisciStringa("luoDiNascita:"));
+		p.setCf(inserisciStringa("cf"));
+	}
+}
