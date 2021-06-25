@@ -7,6 +7,8 @@ public class Animale {
 	private Double altezza;
 	private boolean aggressivo;
 	
+	public Animale() {}
+	
 	public Animale(String specie, String sesso, String areaZoo, Integer eta, Integer peso, Double altezza, boolean aggressivo) {
 		this.specie = specie;
 		this.sesso = sesso;
@@ -14,6 +16,30 @@ public class Animale {
 		this.eta = eta;
 		this.peso = peso;
 		this.altezza = altezza;
+		this.aggressivo = aggressivo;
+	}
+
+	public void setSesso(String sesso) {
+		this.sesso = sesso;
+	}
+
+	public void setAreaZoo(String areaZoo) {
+		this.areaZoo = areaZoo;
+	}
+
+	public void setEta(Integer eta) {
+		this.eta = eta;
+	}
+
+	public void setPeso(Integer peso) {
+		this.peso = peso;
+	}
+
+	public void setAltezza(Double altezza) {
+		this.altezza = altezza;
+	}
+
+	public void setAggressivo(boolean aggressivo) {
 		this.aggressivo = aggressivo;
 	}
 
@@ -41,7 +67,7 @@ public class Animale {
 		return altezza;
 	}
 
-	public boolean isAggressivo() {
+	public boolean getAggressivo() {
 		return aggressivo;
 	}
 }

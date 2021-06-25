@@ -77,9 +77,9 @@ public class GestioneIO {
 							+ "Cilindrata: "+auto[i].getCilindrata()+"\n"
 							+ "Prezzo del Bollo: "+auto[i].getPrezzoBollo()+"\n"
 							+ "Assicurazione: ");
-							checkBools(auto[i].isAssicurazione());
+							checkBools(auto[i].getAssicurazione());
 							stampaNL("\nRevisione: ");
-							checkBools(auto[i].isRevisione());
+							checkBools(auto[i].getRevisione());
 							stampaNL("\n*****\n");
 				}
 			}

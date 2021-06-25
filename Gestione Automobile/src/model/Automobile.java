@@ -46,7 +46,7 @@ public class Automobile {
 		this.cilindrata = cilindrata;
 	}
 	
-	public boolean isAssicurazione() {
+	public boolean getAssicurazione() {
 		return assicurazione;
 	}
 	
@@ -54,7 +54,7 @@ public class Automobile {
 		this.assicurazione = assicurazione;
 	}
 	
-	public boolean isRevisione() {
+	public boolean getRevisione() {
 		return revisione;
 	}
 	

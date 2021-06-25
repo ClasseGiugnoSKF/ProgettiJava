@@ -72,7 +72,7 @@ public class GestioneIO {
 							+ "Altezza: "+animale[i].getAltezza()+"m\n"
 							+ "Area Zoo: "+animale[i].getAreaZoo()+"\n"
 							+ "Tendenze Aggressive: ");
-					checkBools(animale[i].isAggressivo());
+					checkBools(animale[i].getAggressivo());
 					stampaNL("\n*****\n");
 				}
 			}
