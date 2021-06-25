@@ -1,0 +1,41 @@
+package gestionePersona2;
+
+import gestionePersona2.Persona;
+
+public class Avvio {
+
+	public static void main(String[] args) {
+		boolean flag=true;
+		GestoreIO g=new GestoreIO();
+		int dimensione=g.inserisciIntero("Quante persone vuoi creare?");
+	    Persona[] persone=new Persona[dimensione];
+	    String risposta;
+		int i=0;
+	    while(flag&&i<dimensione) {
+			risposta=g.inserisciStringa("Vuoi inserire una persona?");
+			if(risposta.equalsIgnoreCase("Si")) {
+				System.out.println("inserisci i valori dell'oggetto n:"+(i+1));
+				persone[i]=new Persona(g.inserisciStringa("nome:"),g.inserisciStringa("cognome:"),g.inserisciIntero("eta:"),g.inserisciStringa("luogoDiNascita:"),g.inserisciStringa("cf:"));
+				i++;
+				}
+			else {
+				flag=false;
+			}
+			
+		
+	    }
+          for(int j=0;j<persone.length;j++) {
+	    if(persone[j]!=null)
+        	  g.stampaPersona(persone[j]);
+	    System.out.println();
+          }
+          g.inserimento(persone[0]);
+          for(int j=0;j<persone.length;j++) {
+      	    if(persone[j]!=null)
+              	  g.stampaPersona(persone[j]);
+      	    System.out.println();
+                }
+          
+          }
+
+}
