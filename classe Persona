@@ -1,0 +1,67 @@
+package gestionePersona2;
+
+public class Persona {
+	private String nome;
+    private String cognome;
+    private int eta;
+    private String luogoDiNascita;
+    private String cf;
+	public Persona(String nome,String cognome,int eta,String luogoDiNascita,String cf) {
+		this.nome=nome;
+		this.cognome=cognome;
+		this.eta=eta;
+		this.luogoDiNascita=luogoDiNascita;
+		this.cf=cf;
+		
+	}
+	public Persona() {
+		
+	}
+	
+	public void setNome(String nome) {
+		this.nome=nome;
+		
+	}
+	public void setCognome(String cognome) {
+		this.cognome=cognome;
+		
+	}
+	public void setEta(int eta) {
+	this.eta=eta;
+		
+	}
+	public void setLuogoDiNascita(String luogoDiNascita) {
+		this.luogoDiNascita=luogoDiNascita;
+		
+	}
+
+    public void setCf(String cf) {
+	     this.cf=cf;
+	
+}
+    public String getNome() {
+		return nome;
+		
+	}
+	public String getCognome() {
+		return cognome;
+		
+	}
+	public int getEta() {
+      return eta;
+		
+	}
+	public String getLuogoDiNascita() {
+		return luogoDiNascita;
+		
+	}
+
+    public String getCf() {
+	     return cf;
+	
+}
+    
+    
+
+
+}
