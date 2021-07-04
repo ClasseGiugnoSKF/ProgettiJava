@@ -109,11 +109,11 @@ public class Avvio {
 				IOperazione radiceLambda = (num1,num2) -> Math.pow(num1, 1/num2);
 				switch(io.leggiByte("Operazione classica (1) o lambda? (2)")) {
 				case 1:
-					System.out.println(radiceClassic.operazione(io.leggiDouble("Inserisci il primo numero: "), 
-							io.leggiDouble("Inserisci il radicando: ")));
+					System.out.println(radiceClassic.operazione(io.leggiDouble("Inserisci il radicando: "), 
+							io.leggiDouble("Inserisci l'indice della radice: ")));
 					break;
 				case 2:
-					System.out.println(radiceLambda.operazione(io.leggiDouble("Inserisci il primo numero: "), 
+					System.out.println(radiceLambda.operazione(io.leggiDouble("Inserisci il radicando: "), 
 							io.leggiDouble("Inserisci l'indice della radice: ")));
 				}	
 				break;
