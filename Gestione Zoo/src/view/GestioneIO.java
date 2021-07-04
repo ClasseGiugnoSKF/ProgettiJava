@@ -35,7 +35,6 @@ public class GestioneIO {
 			return true;
 		}
 		return false;
-		
 	}
 	
 	public void stampa(String messaggio) {
@@ -73,10 +72,17 @@ public class GestioneIO {
 							+ "Area Zoo: "+animale[i].getAreaZoo()+"\n"
 							+ "Tendenze Aggressive: ");
 					checkBools(animale[i].getAggressivo());
-					stampaNL("\n*****\n");
+					stampaNL("\n");
 				}
 			}
 		}
 	
+	public void csvAnimali(Animale[] a) {
+		for(int i=0;i<a.length;i++) {
+			if(a[i] != null) {
+				stampa(a[i]+"\n*****");
+			}
+		}
+	}
 }
 

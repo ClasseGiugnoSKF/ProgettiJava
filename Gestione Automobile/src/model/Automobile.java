@@ -2,8 +2,13 @@ package model;
 
 public class Automobile {
 
-	private String modello, marca, colore, annoImmatricolazione, cilindrata;
-	private boolean assicurazione, revisione;
+	private String modello;
+	private String marca;
+	private String colore;
+	private String annoImmatricolazione;
+	private String cilindrata;
+	private boolean assicurazione;
+	private boolean revisione;
 	private Integer prezzoBollo;
 	
 	public String getModello() {
@@ -68,5 +73,10 @@ public class Automobile {
 	
 	public void setPrezzoBollo(Integer prezzoBollo) {
 		this.prezzoBollo = prezzoBollo;
+	}
+	
+	@Override
+	public String toString() {
+		return modello+","+marca+","+colore+","+annoImmatricolazione+","+cilindrata+","+prezzoBollo+","+assicurazione+","+revisione;
 	}
 }

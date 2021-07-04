@@ -1,8 +1,12 @@
 package model;
 
 public class Persona {
-
-	private String nome, cognome, cf, nazione, luogoNascita;
+	
+	private String nome;
+	private String cognome;
+	private String cf;
+	private String nazione;
+	private String luogoNascita;
 	private Integer eta;
 	
 	public Persona() {}
@@ -62,5 +66,10 @@ public class Persona {
 	
 	public void setEta(Integer eta) {
 		this.eta = eta;
+	}
+	
+	@Override
+	public String toString() {
+		return nome+","+cognome+","+eta+","+cf+","+nazione+","+luogoNascita;
 	}
 }

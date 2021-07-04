@@ -56,9 +56,16 @@ public class GestioneIO {
 						+ "Età: "+p[i].getEta()+"\n"
 						+ "Codice Fiscale: "+p[i].getCf()+"\n"
 						+ "Nazione: "+p[i].getNazione()+"\n"
-						+ "Luogo di Nascita: "+p[i].getLuogoNascita()+"\n*****");					
+						+ "Luogo di Nascita: "+p[i].getLuogoNascita());	
 			}
 		}
 	}
 	
+	public void csvPersone(Persona[] p) {
+		for(int i=0;i<p.length;i++) {
+			if(p[i] != null) {
+				stampa(p[i]+"\n*****");
+			}
+		}
+	}
 }

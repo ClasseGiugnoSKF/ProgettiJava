@@ -80,10 +80,17 @@ public class GestioneIO {
 							checkBools(auto[i].getAssicurazione());
 							stampaNL("\nRevisione: ");
 							checkBools(auto[i].getRevisione());
-							stampaNL("\n*****\n");
+							stampa("");
 				}
 			}
 		}
 	
+	public void csvAutomobili(Automobile[] auto) {
+		for(int i=0;i<auto.length;i++) {
+			if(auto[i] != null) {
+				stampa(auto[i]+"\n*****");
+			}
+		}
+	}
 }
 

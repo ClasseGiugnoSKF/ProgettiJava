@@ -18,14 +18,12 @@ public class Avvio {
 				if(io.leggiStringa("Vuoi aggiungere altri utenti? (Si/No)").equalsIgnoreCase("No"))break;
 			}
 			risposta = io.leggiStringa("Vuoi stampare? (Si/No)");
-			if(risposta.equalsIgnoreCase("Si"))io.stampaPersone(persone);
+			if(risposta.equalsIgnoreCase("Si")) {
+				io.stampaPersone(persone);
+				io.csvPersone(persone);
+			}
 			risposta = io.leggiStringa("Vuoi continuare? (Si/No)");
 		} while(risposta.equalsIgnoreCase("si"));
-		
-		
-		
-		
-
 	}
 
 }

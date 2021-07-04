@@ -2,8 +2,11 @@ package model;
 
 public class Animale {
 
-	private String specie, sesso, areaZoo;
-	private Integer eta, peso;
+	private String specie; 
+	private String sesso;
+	private String areaZoo;
+	private Integer eta;
+	private Integer peso;
 	private Double altezza;
 	private boolean aggressivo;
 	
@@ -69,5 +72,10 @@ public class Animale {
 
 	public boolean getAggressivo() {
 		return aggressivo;
+	}
+	
+	@Override
+	public String toString() {
+		return specie+","+sesso+","+areaZoo+","+eta+","+peso+","+altezza+","+aggressivo;
 	}
 }

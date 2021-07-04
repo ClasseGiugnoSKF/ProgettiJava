@@ -32,5 +32,11 @@ public class Calcolatrice {
 	double divisione(double a, double b, double c) {
 		return a / b / c;
 	}
+	
+	void determinante(int[][] matrice) {
+		for(int i=0;i<=matrice.length/2;i++) {
+			System.out.println((matrice[i][i] * matrice[matrice.length-1-i][matrice.length-1-i]));
+		}
+	}
 
 }

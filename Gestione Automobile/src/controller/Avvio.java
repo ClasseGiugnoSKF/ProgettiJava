@@ -16,7 +16,10 @@ public class Avvio {
 				io.inserisciAuto(automobili[i]);
 				if(io.leggiStringa("Vuoi inserire altre automobili? (Si/No)").equalsIgnoreCase("no")) break;
 			}
-			if(io.leggiStringa("Vuoi stampare? (Si/No)").equalsIgnoreCase("si")) io.stampaAutomobili(automobili);
+			if(io.leggiStringa("Vuoi stampare? (Si/No)").equalsIgnoreCase("si")) {
+				io.stampaAutomobili(automobili);
+				io.csvAutomobili(automobili);
+			}
 			risposta = io.leggiStringa("Vuoi continuare? (Si/No)");
 		} while(risposta.equalsIgnoreCase("si"));
 		

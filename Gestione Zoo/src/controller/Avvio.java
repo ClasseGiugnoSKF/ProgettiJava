@@ -16,7 +16,10 @@ public class Avvio {
 						io.leggiBool("Mostra comportamenti aggressivi?"));
 				if(io.leggiStringa("Vuoi aggiungere un altro animale?: (Si/No)").equalsIgnoreCase("no")) break;
 			}
-			if(io.leggiStringa("Vuoi stampare?: (Si/No)").equalsIgnoreCase("si"))io.stampaAnimali(animali);
+			if(io.leggiStringa("Vuoi stampare?: (Si/No)").equalsIgnoreCase("si")) {
+				io.stampaAnimali(animali);
+				io.csvAnimali(animali);
+			}
 			risposta = io.leggiStringa("Vuoi continuare?: (Si/No)");
 		} while(risposta.equalsIgnoreCase("si"));
 	}
